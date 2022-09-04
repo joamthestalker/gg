@@ -8,66 +8,7 @@ bot = commands.Bot(command_prefix = "/", intents = discord.Intents.all(), descri
 async def on_ready():
 	print("Ready !")
 
-"""
-@bot.command()
-async def amixem(ctx):
-	messages = await ctx.channel.history(limit =  1).flatten()
-	for message in messages:
-		await message.delete()
-	await ctx.send ("https://www.youtube.com/channel/UCgvqvBoSHB1ctlyyhoHrGwQ")
 
-@bot.command()
-async def nozman(ctx):
-	messages = await ctx.channel.history(limit=1).flatten()
-	for message in messages:
-			await message.delete()
-	await ctx.send ("https://www.youtube.com/channel/UCWnfDPdZw6A23UtuBpYBbAg")
-
-
-
-
-@bot.command()
-async def video(ctx):
-	messages = await ctx.channel.purge(limit=1)
-	for message in messages:
-			await message.delete()
-	await ctx.send("dr.nozman:    /nozman")
-	await ctx.send("amixem:      /amixem")
-	await ctx.send("fuze:       /fuze")
-
-
-@bot.command()
-async def clear(ctx, nombre : int):
-    messages = await ctx.channel.purge(limit=nombre+1)
-    for message in messages:
-        await message.delete()
-
-
-
-
-@bot.command()
-async def ninjaxx(ctx):
-	messages = await ctx.channel.history(limit = + 1).flatten()
-	for message in messages:
-		await message.delete()
-	await ctx.send("https://www.youtube.com/channel/UCDB1PaqiausfXbVI2Jjk0iQ")
-
-
-@bot.command()
-async def fuze(ctx):
-	messages = await ctx.channel.history(limit = + 1).flatten()
-	for message in messages:
-		await message.delete()
-	await ctx.send("https://www.youtube.com/c/FuzeIII")
-
-
-@bot.command()
-async def message(ctx):
-	messages = await ctx.channel.history(limit = 1).flatten()
-	for message in messages:
-		await message.delete()
-		await ctx.send("@membre")
-"""
 
 
 @bot.command()
